@@ -1,5 +1,4 @@
-let a = 1;
-console.log();
+console.log('test');
 {
   let a = 1;
 }

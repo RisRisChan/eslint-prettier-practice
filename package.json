@@ -7,7 +7,14 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint common.js",
     "fix": "eslint --fix common.js",
-    "format": "prettier --write common.js"
+    "format": "prettier --write common.js",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write",
+      "eslint --fix"
+    ]
   },
   "keywords": [],
   "author": "",
